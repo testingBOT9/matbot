@@ -13,7 +13,7 @@
 <a href="https://github.com/testingBOT9"><img title="Author" src="https://img.shields.io/badge/AUTHOR-TESTINGBOT 9-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/testingBOT9/matbot"><img title="Rating" src="https://www.codefactor.io/repository/github/testingBOT9/matbot/badge/main"></a>
+<a href="https://www.codefactor.io/repository/github/testingBOT9/matbot"><img title="Rate" src="https://www.codefactor.io/repository/github/testingBOT9/matbot/badge/main"></a>
 </p>
 <p align="center">
 <a href="https://github.com/testingBOT9/matbot?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/testingBOT9?color=blue&style=flat-square"></a>
