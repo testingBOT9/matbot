@@ -61,8 +61,13 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 > apt update && apt upgrade
 > git clone https://github.com/testingBOT9/matbot
 > cd matbot
-> npm i -g cwebp && npm i node-tesseract-ocr && npm i -g ytdl && npm i  && npm i got && node index js
-> Tinggal scan kode qr yeee...done
+> npm i -g cwebp
+>npm i node-tesseract-ocr
+>npm i -g ytdl
+>npm i
+>npm i got
+>node index js
+> QR codeny muncul tinggal scan Required WhatsApp web
 ```
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
@@ -102,7 +107,7 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 |       ✅       | Info                             |
 |       ✅       | Donate                           |
 |       ✅       | 18+.                             |
-|                   MORE  Fitur                     |
+
 
 Ket: Aktiv 24 jam
 
@@ -112,9 +117,9 @@ Ket: Aktiv 24 jam
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
 
-* [`Youtube Admin`](https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg)
-* [`Instagram Admin`](https://instagram.com/_sadboy.ig)
-* [`WhatsApp Admin `](https://wa.me/+6285722553839)
+* [`Youtube Admin`](https://youtube.com/channel/UCVsWylgplnE294DRojNuXSw)
+* [`Instagram Admin`](https://instagram.com/febri_swag12)
+* [`WhatsApp Admin `](https://wa.me/+6281223461910)
 ## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
 * [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)
