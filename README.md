@@ -54,19 +54,20 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 > masuk ke apk termux lalu ketik dibawah ini!
 > termux-setup-storage
 > pkg install git
->pkg install tesseract
->pkg install wget
->pkg install ffmpeg
->pkg install nodejs
-> apt update && apt upgrade
+> pkg install tesseract
+> pkg install wget
+> pkg install ffmpeg
+> pkg install nodejs
+> apt update
+> apt upgrade
 > git clone https://github.com/testingBOT9/matbot
 > cd matbot
 > npm i -g cwebp
->npm i node-tesseract-ocr
->npm i -g ytdl
->npm i
->npm i got
->node index js
+> npm i node-tesseract-ocr
+> npm i -g ytdl
+> npm i
+> npm i got
+> node index js
 > QR codeny muncul tinggal scan Required WhatsApp web
 ```
 
@@ -112,7 +113,8 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 Ket: Aktiv 24 jam
 
 ## DONASI <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="29px">
-
+[`OVO`](0812-2346-1910)
+[`PULSA`](0812-2346-1910)
 
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
@@ -127,6 +129,6 @@ Ket: Aktiv 24 jam
 * [`ArugaZ`](https://github.com/ArugaZ/whatsapp-bot)
 * [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)
 * [`Alfbot`](https://github.com/alfiansx/alfbot)
-* [`a187id`](https://github.com/a187id/AR15BOT
+* [`a187id`](https://github.com/a187id/AR15BOT)
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
 
