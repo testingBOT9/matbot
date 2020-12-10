@@ -8,12 +8,12 @@
 * ARIS187 ID
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
-const A187 = 'anonymous_chatbot'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/jayasantika_26'; // JANGAN UBAH-UBAH INFO!!!
-const nomer = 'Wa.me/+6289524664142'; // JANGAN UBAH-UBAH INFO!!!
+const A187 = 'Javzlyn_ChatBot'; // JANGAN UBAH-UBAH INFO!!!
+const instagram = 'https://instagram.com/febri_swag12'; // JANGAN UBAH-UBAH INFO!!!
+const nomer = 'Wa.me/+6281223461910'; // JANGAN UBAH-UBAH INFO!!!
 const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
-const groupwhatsapp = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // JANGAN UBAH-UBAH INFO!!!
-const youtube = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // JANGAN UBAH-UBAH INFO!!!
+const groupwhatsapp = 'https://chat.whatsapp.com/Ga1kIzOXYclCkobFuIg7sJ'; // JANGAN UBAH-UBAH INFO!!!
+const youtube = 'https://www.youtube.com/channel/UCVsWylgplnE294DRojNuXSw'; // JANGAN UBAH-UBAH INFO!!!
 //A187ID
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -127,7 +127,7 @@ conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsA
 
 //ChatA187ID
 else if (text == 'assalamualaikum'){
-conn.sendMessage(id, ' _3aalaikumsalam, _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Waalaikumsalam, _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'salam'){
 conn.sendMessage(id, ' _Waalaikumsalam, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
@@ -151,7 +151,7 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner Javzlyn_Chatbot wa.me/+6281223461910* ' ,MessageType.text);
 }
 else if (text == '#help'){
 conn.sendMessage(id, ' *Menampilkan Pilihan Menu!!!* ' ,MessageType.text);
@@ -175,7 +175,7 @@ else if (text == '#donasi'){
 conn.sendMessage(id, ' *Menampilkan Donasi!!!* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator Javzlyn_ChatBot wa.me/+6281223461910* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
 conn.sendMessage(id, ' _Pagi juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
