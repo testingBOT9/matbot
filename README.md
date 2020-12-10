@@ -7,7 +7,7 @@
 
 
 <p align="center">
-<a href="#"><img title="JavzlynBot" src="https://img.shields.io/badge/AR15BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="JavzlynBot" src="https://img.shields.io/badge/JavzlynBot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/testingBOT9"><img title="Author" src="https://img.shields.io/badge/AUTHOR-TESTINGBOT 9-orange.svg?style=for-the-badge&logo=github"></a>
