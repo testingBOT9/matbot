@@ -5,7 +5,7 @@
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YY MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* ARIS187 ID
+* Javzlyn Fransiskus
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
 const A187 = 'Javzlyn_ChatBot'; // JANGAN UBAH-UBAH INFO!!!
@@ -429,7 +429,7 @@ if (text.includes("!puisi1")){
 const teks = text.replace(/!puisi1 /, "")
 axios.get(`https://arugaz.herokuapp.com/api/puisi1`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih Puisinya Kak :)*\n\n _${res.data.result}_ `;
+    let hasil = ` *Nih Puisinya*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -437,7 +437,7 @@ if (text.includes("!puisi2")){
 const teks = text.replace(/!puisi2 /, "")
 axios.get(`https://arugaz.herokuapp.com/api/puisi3`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih Puisinya Kak :)*\n\n _${res.data.result}_ `;
+    let hasil = ` *Nih Puisinya*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -445,7 +445,7 @@ if (text.includes("!cerpen")){
 const teks = text.replace(/!cerpen /, "")
 axios.get(`https://arugaz.herokuapp.com/api/cerpen`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih cerpen Kak :)*\n\n _${res.data.result}_ `;
+    let hasil = ` *Nih cerpen-nya*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -453,7 +453,7 @@ if (text.includes("!cersex")){
 const teks = text.replace(/!cersex /, "")
 axios.get(`https://arugaz.herokuapp.com/api/cersex2`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih cersex Kak :)*\n\n _${res.data.result}_ `;
+    let hasil = ` *Nih cersexnya_-*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -1042,7 +1042,7 @@ _${kata}_
    
    if (text.includes("!loli"))
    {
-    var items = ["anime loli","anime loli sange","anime loli fackgirll","anime loli i love you"];
+    var items = ["anime loli","anime loli sange","anime loli fackgirll","anime loli i love you","loli psychopath"];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
@@ -1163,7 +1163,7 @@ if (text.includes("!pokemon"))
   }
    if (text.includes("!foto cewek"))
    {
-    var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl", "remaja cantik", "cewek korea", "cewek jepang"];
+    var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl", "remaja cantik", "cewek korea", "cewek jepang", "Waifu"];
     var cewe = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + cewe;
     
@@ -1193,7 +1193,7 @@ if (text.includes("!pokemon"))
 
    if (text.includes("!foto cowok"))
    {
-    var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy", "cowok indo ganteng", "cowok korea"];
+    var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy", "cowok indo ganteng", "cowok korea", "Husbu"];
     var cowo = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + cowo;
     
@@ -1223,7 +1223,7 @@ if (text.includes("!pokemon"))
 
 if (text.includes("!fotoanime"))
    {
-    var items = ["anime girl", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd"];
+    var items = ["anime girl", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd", "anime tumblr", "Husbu", "Waifu"];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
@@ -1267,7 +1267,7 @@ if (text.includes("!alay")){
 	})
 }
 
-//Tolonglah bro jangan di ubah ubah Aris187 ID
+//Tolonglah bro jangan di ubah ubah Javzlyn Fransiskus Manik
 
 
 })
