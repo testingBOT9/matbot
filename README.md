@@ -20,7 +20,7 @@
 <a href="https://github.com/testingBOT9/matbot?tab=stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/testingBOT9/matbot?color=red&style=flat-square"></a>
 <a href="https://github.com/testingBOT9/matbot?tab=network/members"><img title="Forks" src="https://img.shields.io/github/forks/testingBOT9/matbot?color=red&style=flat-square"></a>
 <a href="https://github.com/testingBOT9/matbot?tab=watchers"><img title="Watching" src="https://img.shields.io/github/watchers/testingBOT9/matbot?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FA187ID%2FAR15BOT&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FA187ID%2FAR15BOT&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
       <img src="https://img.shields.io/badge/license-The%20Unlicense-green?style=flat-square" alt="shield.png">
 </a>
 
