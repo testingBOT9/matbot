@@ -1,3 +1,5 @@
+exports.package.json = (botname)
+     return `
 {
   "name": "${botname}",
   "version": "1.0.0",
