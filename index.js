@@ -8,6 +8,7 @@
 * Javzlyn
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
+const Aku = 'Javzlyn'; // JANGAN UBAH-UBAH INFO!!!
 const BotName = 'Javzlyn_chatbot'; // JANGAN UBAH-UBAH INFO!!!
 const instagram = 'https://instagram.com/febri_swag12'; // JANGAN UBAH-UBAH INFO!!!
 const nomer = 'Wa.me/+6281223461910'; // JANGAN UBAH-UBAH INFO!!!
