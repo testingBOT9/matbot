@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-bot",
+  "name": "matbot",
   "version": "2.0.0",
   "description": "Halo sesama pengguna, <b>whatsapp-bot</b> adalah skrip otomatisasi whatsapp atau lebih seperti bot yang merespons kata kunci tertentu dan beberapa fitur lain yang sedang kami kerjakan.",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mhank BarBar",
+  "author": "testingBOT9",
   "license": "Apache-2.0",
   "dependencies": {
     "@open-wa/wa-automate": "^2.0.28",
@@ -35,13 +35,13 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhankbarbar/whatsapp-bot.git"
+    "url": "git+https://github.com/testingBOT9/matbot.git"
   },
   "keywords": [
-    "Whatsapp-Bot"
+    "Matbot"
   ],
   "bugs": {
-    "url": "https://github.com/mhankbarbar/whatsapp-bot/issues"
+    "url": "https://github.com/testingBOT9/matbot/issues"
   },
-  "homepage": "https://github.com/mhankbarbar/whatsapp-bot#readme"
+  "homepage": "https://github.com/testingBOT9/matbot#readme"
 }
