@@ -1,21 +1,3 @@
-/*
-* JANGAN UBAH-UBAH INFO!!!
-* "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT WA_CHATBOT
-* JANGAN MODAL NAMA DOANG BOSQ
-* HARGAILAH YG MEMBUAT SCRIPT INI BOSQ
-* JANGAN UBAH-UBAH INFO!!!
-* Javzlyn
-* BOLEH UBAH TAPI KECUALI INFO!!!
-*/
-const aku = 'Javzlyn'; // JANGAN UBAH-UBAH INFO!!!
-const botname = 'Javzlyn_chatbot'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/febri_swag12'; // JANGAN UBAH-UBAH INFO!!!
-const nomer = 'Wa.me/+6281223461910'; // JANGAN UBAH-UBAH INFO!!!
-const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
-const groupwhatsapp = 'https://chat.whatsapp.com/Ga1kIzOXYclCkobFuIg7sJ'; // JANGAN UBAH-UBAH INFO!!!
-const youtube = 'https://youtube.com/channel/UCVsWylgplnE294DRojNuXSw'; // JANGAN UBAH-UBAH INFO!!!
-//Javzlyn
 const { create, Client } = require('@open-wa/wa-automate')
 const welcome = require('./lib/welcome')
 const msgHandler = require('./msgHndlr')
