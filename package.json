@@ -1,45 +1,47 @@
-exports.package.json = (botname)
-     return `
 {
-  "name": "${botname}",
-  "version": "1.0.0",
-  "description": "Termux only",
+  "name": "whatsapp-bot",
+  "version": "2.0.0",
+  "description": "Halo sesama pengguna, <b>whatsapp-bot</b> adalah skrip otomatisasi whatsapp atau lebih seperti bot yang merespons kata kunci tertentu dan beberapa fitur lain yang sedang kami kerjakan.",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mhank BarBar",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@open-wa/wa-automate": "^3.0.16",
+    "@open-wa/wa-decrypt": "^2.0.1",
+    "axios": "^0.19.2",
+    "brainly-scraper": "^1.0.2",
+    "emoji-regex": "^9.0.0",
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
+    "got": "^11.7.0",
+    "moment-timezone": "^0.5.31",
+    "needle": "^2.5.2",
+    "nhentai-api": "^3.0.2",
+    "nhentai-js": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "node-gtts": "^2.0.2",
+    "remove.bg": "^1.3.0",
+    "request": "^2.88.2",
+    "tiktok-scraper": "^1.3.4",
+    "video-url-link": "^0.1.4"
+  },
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-    "@adiwajshing/baileys": "^3.2.1",
-    "brainly-scraper": "^1.0.2",
-    "cheerio": "^1.0.0-rc.3",
-    "cloudconvert": "^2.1.5",
-    "got": "^11.8.0",
-    "gulp": "^4.0.2",
-    "gulp-webp": "^4.0.1",
-    "image-to-base64": "^2.1.1",
-    "moment": "^2.29.1",
-    "node-gtts": "^2.0.2",
-    "request": "^2.88.2",
-    "text-to-mp3": "^1.0.4",
-    "urlencode": "^1.1.0",
-    "webp-simple-converter": "^0.0.6",
-    "ytdl-core": "^3.4.2"
-  },
   "devDependencies": {},
-  "scripts": {
-    "test": "node index"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/testingBOT9/matbot.git"
+    "url": "git+https://github.com/mhankbarbar/whatsapp-bot.git"
   },
   "keywords": [
-    "k"
+    "Whatsapp-Bot"
   ],
-  "author": "Abdul Muttaqin",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/testingBOT9/matbot/issues"
+    "url": "https://github.com/mhankbarbar/whatsapp-bot/issues"
   },
-  "homepage": "https://github.com/testingBOT9/matbot#readme"
+  "homepage": "https://github.com/mhankbarbar/whatsapp-bot#readme"
 }
