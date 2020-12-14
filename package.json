@@ -7,8 +7,8 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "testingBOT9",
-  "license": "Apache-2.0",
+  "author": "Javzlyn Frans Darren",
+  "license": "Apache License 2.0",
   "dependencies": {
     "@open-wa/wa-automate": "^2.0.28",
     "@open-wa/wa-decrypt": "^2.0.1",
@@ -38,7 +38,7 @@
     "url": "git+https://github.com/testingBOT9/matbot.git"
   },
   "keywords": [
-    "Matbot"
+    "whatsapp-bot"
   ],
   "bugs": {
     "url": "https://github.com/testingBOT9/matbot/issues"
