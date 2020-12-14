@@ -1,3 +1,4 @@
+## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> Repository By Javzlyn Forks From <a href="https://github.com/mhankbarbar/whatsapp-bot"><img title="Master" src="https://img.shields.io/badge/Master-mhankbarbar-grey.svg?style=for-the-badge&logo=github"></a>
 <p align="center">
 <img src="https://raw.githubusercontent.com/testingBOT9/matbot/main/media/img/Kaguya.png" width="128" height="128"/>
 </p>
@@ -116,6 +117,9 @@ Fix Stuck on linux, install google chrome stable:
 * [`open-wa/wa-automate-nodejs`](https://github.com/open-wa/wa-automate-nodejs)
 * [`YogaSakti/imageToSticker`](https://github.com/YogaSakti/imageToSticker)
 * [`SomnathDas/Whatsapp-Botto-Re`](https://github.com/SomnathDas/Whatsapp-Botto-Re)
+* [`Mhankbarbar/whatsapp-bot`](https://github.com/Mhankbarbar/whatsapp-bot)
 
 ### Donate
-* [`Saweria`](https://saweria.co/donate/mhankbarbar)
+* [`Saweria Mhankbarbar`](https://saweria.co/donate/mhankbarbar)
+* [`Saweria Javzlyn`](https://saweria.co/donate/Javzlyn)
+<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
