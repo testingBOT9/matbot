@@ -35,13 +35,13 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/testingBOT9/matbot.git"
+    "url": "git+https://github.com/mhankbarbar/whatsapp-bot.git"
   },
   "keywords": [
     "whatsapp-bot"
   ],
   "bugs": {
-    "url": "https://github.com/testingBOT9/matbot/issues"
+    "url": "https://github.com/mhankbarbar/whatsapp-bot/issues"
   },
-  "homepage": "https://github.com/testingBOT9/matbot#readme"
+  "homepage": "https://github.com/mhankbarbar/whatsapp-bot#readme"
 }
