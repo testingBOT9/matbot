@@ -8,7 +8,6 @@
 <p align="center">
 <a href="https://github.com/mhankbarbar"><img title="Author" src="https://img.shields.io/badge/Author-mhankbarbar-red.svg?style=for-the-badge&logo=github"></a>
 </p>
-
 <p align="center">
 <a href="https://github.com/mhankbarbar/followers"><img title="Followers" src="https://img.shields.io/github/followers/mhankbarbar?color=blue&style=flat-square"></a>
 <a href="https://github.com/mhankbarbar/whatsapp-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mhankbarbar/whatsapp-bot?color=red&style=flat-square"></a>
@@ -36,8 +35,11 @@ Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 
 ```bash
-> npm install gify-cli -g
+> npm i -g cwebp
+> npm i -g ytdl
 > npm i
+> npm i got
+> node index js
 ```
 
 ### Usage
