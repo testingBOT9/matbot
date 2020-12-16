@@ -8,10 +8,10 @@
 * ARIS187 ID
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
-const A187 = 'anonymous_chatbot'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/jayasantika_26'; // JANGAN UBAH-UBAH INFO!!!
-const nomer = 'Wa.me/+6289524664142'; // JANGAN UBAH-UBAH INFO!!!
-const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
+const A187 = '🗨JavzlynBot'; // JANGAN UBAH-UBAH INFO!!!
+const instagram = 'https://instagram.com/febri_swag12'; // JANGAN UBAH-UBAH INFO!!!
+const nomer = 'Wa.me/+6281223461910'; // JANGAN UBAH-UBAH INFO!!!
+const aktif = 'Tergantung jaringan Internet'; // JANGAN UBAH-UBAH INFO!!!
 const groupwhatsapp = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // JANGAN UBAH-UBAH INFO!!!
 const youtube = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // JANGAN UBAH-UBAH INFO!!!
 //A187ID
@@ -25,13 +25,7 @@ const fetch = require('node-fetch');
 const urlencode = require("urlencode");
 const axios = require("axios");
 const imageToBase64 = require('image-to-base64');
-const aris = require("./lib/aris.js");
-const donate = require("./lib/donate.js");
-const info = require("./lib/info.js");
-const aris1 = require("./lib/aris1.js");
-const aris2 = require("./lib/aris2.js");
-const aris3 = require("./lib/aris3.js");
-const aris4 = require("./lib/aris4.js");
+const help = require("./lib/help.js");
 const readTextInImage = require('./lib/ocr')
 //A187ID
 const
@@ -64,7 +58,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] 🗨JavzlynBot ready to scan. Donate in https://saweria.co/Javzlyn!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -83,7 +77,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @jayasantika_26`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @febri_swag12`)
 })
 
 conn.on('message-new', async(m) =>
@@ -112,7 +106,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 
 }
 
-// FFA187ID
+//FITUR
 if(text.includes("!cek")){
 var num = text.replace(/!cek/ , "")
 var idn = num.replace("0","+62");
@@ -125,150 +119,111 @@ console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
-//ChatA187ID
-else if (text == 'assalamualaikum'){
-conn.sendMessage(id, ' _3aalaikumsalam, _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
-}
-else if (text == 'salam'){
-conn.sendMessage(id, ' _Waalaikumsalam, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
-}
-else if (text == 'asalamualaikum'){
-conn.sendMessage(id, ' _Waalaikumsalam, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+//ChatJavzlynBot
+else if (text == 'Salam'){
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Assalamualaikum'){
-conn.sendMessage(id, ' _Waalaikumsalam, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'p'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'P'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iyah? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Halo'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
-}
-else if (text == 'Asu'){
-conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
+conn.sendMessage(id, ' _Iyah? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner JavzlynBot: wa.me/+6281223461910* ' ,MessageType.text);
 }
 else if (text == '#help'){
-conn.sendMessage(id, ' *Menampilkan Pilihan Menu!!!* ' ,MessageType.text);
-}
-else if (text == '#menu1'){
-conn.sendMessage(id, ' *Menampilkan Fitur Menu1!!!* ' ,MessageType.text);
-}
-else if (text == '#menu2'){
-conn.sendMessage(id, ' *Menampilkan Fitur Menu2!!!* ' ,MessageType.text);
-}
-else if (text == '#menu3'){
-conn.sendMessage(id, ' *Menampilkan Fitur Menu3!!!* ' ,MessageType.text);
-}
-else if (text == '#menu4'){
-conn.sendMessage(id, ' *Menampilkan Fitur Menu4!!!* ' ,MessageType.text);
-}
-else if (text == '#info'){
-conn.sendMessage(id, ' *Menampilkan Info!!!* ' ,MessageType.text);
-}
-else if (text == '#donasi'){
-conn.sendMessage(id, ' *Menampilkan Donasi!!!* ' ,MessageType.text);
+conn.sendMessage(id, ' *Menampilkan Menu!!!* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator JavzlynBot: wa.me/+6281223461910* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
-conn.sendMessage(id, ' _Pagi juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Pagi juga, Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Siang'){
-conn.sendMessage(id, ' _Siang juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Siang juga, Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Sore'){
-conn.sendMessage(id, ' _Sore juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sore juga, Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Malam'){
-conn.sendMessage(id, ' _Malam juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
-}
-else if (text == 'Ngentod'){
-conn.sendMessage(id, 'Pengin ngentod? babi looo' ,MessageType.text);
-}
-else if (text == 'Anjing'){
-conn.sendMessage(id, 'Jangan toxic anjing,kntl,babi,monyet' ,MessageType.text);
-}
-else if (text == 'Bacot'){
-conn.sendMessage(id, ' *lu bacot_-* ' ,MessageType.text);
+conn.sendMessage(id, ' _Malam juga, Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Test'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Hai'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Woi'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Eoy'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Hi'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Gan'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Sis'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Bro'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Min'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Sayang'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
-}
-else if (text == 'I love u'){
-conn.sendMessage(id, ' _love you too😻_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Iyah aku disini kak... Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Mas'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Mba'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Bre'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Cuy'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Euy'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'makasi'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 else if (text == 'Makasi'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 else if (text == 'makasih'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 else if (text == 'Makasih'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 else if (text == 'thank'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 else if (text == 'Thank'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 else if (text == 'thanks'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 else if (text == 'Thanks'){
-conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
+conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan_ ' ,MessageType.text);
 }
 
 // FiturA187ID
@@ -440,7 +395,7 @@ if (text.includes("!puisi2")){
 const teks = text.replace(/!puisi2 /, "")
 axios.get(`https://arugaz.herokuapp.com/api/puisi3`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih Puisinya Kak :)*\n\n _${res.data.result}_ `;
+    let hasil = ` *Nih Puisinya_-*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -448,7 +403,7 @@ if (text.includes("!cerpen")){
 const teks = text.replace(/!cerpen /, "")
 axios.get(`https://arugaz.herokuapp.com/api/cerpen`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih cerpen Kak :)*\n\n _${res.data.result}_ `;
+    let hasil = ` *Nih cerpennya_-*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -456,7 +411,7 @@ if (text.includes("!cersex")){
 const teks = text.replace(/!cersex /, "")
 axios.get(`https://arugaz.herokuapp.com/api/cersex2`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih cersex Kak :)*\n\n _${res.data.result}_ `;
+    let hasil = ` *Astagah Tobat kak-!!*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -464,7 +419,7 @@ if (text.includes("!quotes1")){
 const teks = text.replace(/!quotes1 /, "")
 axios.get(`https://arugaz.herokuapp.com/api/randomquotes`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *Nih Quotes Kak :)*\n\n *Author* : _${res.data.author}_ \n\n *Quotes* : _${res.data.quotes}_ `;
+    let hasil = ` *Nih Quotesnya*\n\n *Author* : _${res.data.author}_ \n\n *Quotes* : _${res.data.quotes}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -538,7 +493,7 @@ if (text.includes("!covid")){
 const teks = text.replace(/!covid /, "")
 axios.get(`https://arugaz.herokuapp.com/api/coronaindo`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-    let hasil = ` *🔎DATA WABAH COVID-19 TERBARU DI INDONESIA🔍* \n\n *Kasus Baru* : _${res.data.kasus_baru}_ \n\n *Kasus Total* : _${res.data.kasus_total}_ \n\n *Meninggal* : _${res.data.meninggal}_ \n\n *Negara* : _${res.data.negara}_ \n\n *Penanganan* : _${res.data.penanganan}_ \n\n *Sembuh* : _${res.data.sembuh}_ \n\n *Terakhir* : _${res.data.terakhir}_ `;
+    let hasil = ` *🔎DATA WABAH COVID-19 TERBARU DI INDONESIA🇲🇨* \n\n *Kasus Baru* : _${res.data.kasus_baru}_ \n\n *Kasus Total* : _${res.data.kasus_total}_ \n\n *Meninggal* : _${res.data.meninggal}_ \n\n *Negara* : _${res.data.negara}_ \n\n *Penanganan* : _${res.data.penanganan}_ \n\n *Sembuh* : _${res.data.sembuh}_ \n\n *Terakhir* : _${res.data.terakhir}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -558,396 +513,27 @@ axios.get(`https://api.terhambar.com/ninja?nama=${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text == '#help'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, aris.aris(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-if (text == '#menu1'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, aris1.aris1(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-if (text == '#menu2'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, aris2.aris2(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-if (text == '#menu3'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, aris3.aris3(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-if (text == '#menu4'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, aris4.aris4(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-else if (text == '#donate'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-else if (text == '#donasi'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-else if (text == '#DONATE'){
-const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-else if (text == '#DONASI'){
-  const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
-}
-else if (text == '#info'){
-  const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
-var date = new Date();
-var tahun = date.getFullYear();
-var bulan = date.getMonth();
-var tanggal = date.getDate();
-var hari = date.getDay();
-var jam = date.getHours();
-var menit = date.getMinutes();
-var detik = date.getSeconds();
-switch(hari) {
- case 0: hari = "Minggu"; break;
- case 1: hari = "Senin"; break;
- case 2: hari = "Selasa"; break;
- case 3: hari = "Rabu"; break;
- case 4: hari = "Kamis"; break;
- case 5: hari = "Jum'at"; break;
- case 6: hari = "Sabtu"; break;
-}
-switch(bulan) {
- case 0: bulan = "Januari"; break;
- case 1: bulan = "Februari"; break;
- case 2: bulan = "Maret"; break;
- case 3: bulan = "April"; break;
- case 4: bulan = "Mei"; break;
- case 5: bulan = "Juni"; break;
- case 6: bulan = "Juli"; break;
- case 7: bulan = "Agustus"; break;
- case 8: bulan = "September"; break;
- case 9: bulan = "Oktober"; break;
- case 10: bulan = "November"; break;
- case 11: bulan = "Desember"; break;
-}
-var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
-var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, info.info(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
 else if (text == '!foto'){
 conn.sendMessage(id, 'kirim !foto cewek/cowok\n\nContoh: !foto cewek' ,MessageType.text);
 }
 else if (text == '#help'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *JavzlynBot*_ ' ,MessageType.text);
 }
 else if (text == '#menu1'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *JavzlynBot*_ ' ,MessageType.text);
 }
 else if (text == '#menu'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *JavzlynBot*_ ' ,MessageType.text);
 }
 else if (text == '#menu2'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *JavzlynBot*_ ' ,MessageType.text);
 }
 else if (text == '#menu3'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾*_ ' ,MessageType.text);
 }
 else if (text == '#menu4'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾*_ ' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
@@ -1045,7 +631,7 @@ _${kata}_
    
    if (text.includes("!loli"))
    {
-    var items = ["anime loli","anime loli sange","anime loli fackgirll","anime loli i love you"];
+    var items = ["anime loli","anime loli sange","anime loli fackgirll","anime loli i love you","Lolicon Anime","Loli Waifu:];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
@@ -1166,7 +752,7 @@ if (text.includes("!pokemon"))
   }
    if (text.includes("!foto cewek"))
    {
-    var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl", "remaja cantik", "cewek korea", "cewek jepang"];
+    var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl", "remaja cantik", "cewek korea", "cewek jepang","Anime Girl","Waifu"];
     var cewe = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + cewe;
     
@@ -1196,7 +782,7 @@ if (text.includes("!pokemon"))
 
    if (text.includes("!foto cowok"))
    {
-    var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy", "cowok indo ganteng", "cowok korea"];
+    var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy", "cowok indo ganteng", "cowok korea","Husbu"];
     var cowo = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + cowo;
     
@@ -1226,7 +812,7 @@ if (text.includes("!pokemon"))
 
 if (text.includes("!fotoanime"))
    {
-    var items = ["anime girl", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd"];
+    var items = ["anime girl", "Anime boy", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd", "Anime icon", "Anime Fanart"];
     var nime = items[Math.floor(Math.random() * items.length)];
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
     
@@ -1258,7 +844,7 @@ if (text.includes("!lirik")){
 	const teks = text.replace(/!lirik /, "")
 	axios.get(`https://arugaz.herokuapp.com/api/lirik?judul=${teks}`).then ((res) => {
 	     conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
-	 	let hasil = ` *🎧Lirik🎧 Lagu ${teks}:* \n\n\n _${res.data.result}_ `
+	 	let hasil = ` *Lirik Lagu ${teks}:* \n\n\n _${res.data.result}_ `
 	conn.sendMessage(id, hasil, MessageType.text)
 	})
 }
@@ -1270,7 +856,7 @@ if (text.includes("!alay")){
 	})
 }
 
-//Tolonglah bro jangan di ubah ubah Aris187 ID
+//Tolonglah bro jangan di ubah ubah
 
 
 })
