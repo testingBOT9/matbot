@@ -1,5 +1,5 @@
 {
-  "name": "AR15BOT",
+  "name": "JavzlynBot",
   "version": "1.0.0",
   "description": "Termux only",
   "main": "index.js",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aris187id/AR15BOT.git"
+    "url": "git+https://github.com/testingBOT9/matbot.git"
   },
   "keywords": [
     "k"
@@ -37,7 +37,7 @@
   "author": "Abdul Muttaqin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aris187id/AR15BOT/issues"
+    "url": "https://github.com/testingBOT9/matbot/issues"
   },
-  "homepage": "https://github.com/aris187id/AR15BOT#readme"
+  "homepage": "https://github.com/testingBOT9/matbot#readme"
 }
