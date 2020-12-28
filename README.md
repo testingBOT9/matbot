@@ -53,11 +53,19 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 > kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
 > termux-setup-storage
-> pkg install git && pkg install tesseract && pkg install wget && pkg install ffmpeg && pkg install nodejs
-> apt update && apt upgrade
+> pkg install git
 > git clone https://github.com/testingBOT9/matbot
 > cd matbot
-> npm i -g cwebp && npm i node-tesseract-ocr && npm i -g ytdl && npm i  && npm i got && node index js
+> apt-get update
+> apt-get upgrade
+> apt-get install nodejs
+> apt-get install libwebp
+> apt-get install ffmpeg
+> apt-get install wget
+> apt-get install tesseract
+> wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
+> npm install
+> node index js
 > Tinggal scan kode qr yeee...done
 ```
 
