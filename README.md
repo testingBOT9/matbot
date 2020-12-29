@@ -39,9 +39,6 @@ siapin alat dan bahan.
 ## Clone this project
 
 ```bash
-> Klo lu belom punya apk termux, download dulu di PlayStore
-> dah download? Langsung buka... ketik command di bawah
-> apt-get install git
 > git clone https://github.com/A187ID/AR15BOT
 ```
 
