@@ -59,6 +59,8 @@ you've just cloned!!
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
 
+## Features
+
 | Sticker Creator |                Feature           |
 | :-----------: | :--------------------------------: |
 |       ✅       | Send Photo with Caption          |
@@ -102,8 +104,10 @@ Ket: Aktif 24 Jam >_
 * [`Group WhatsApp `]()
 ## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
-* [`fdciabdul/termux-whatsapp-bot`](https://github.com/fdciabdul/termux-whatsapp-bot)
-
-* [`MhankBarBar-whatsapp-bot`](https://github.com/MhankBarBar/whatsapp-bot)
+* [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)
+* [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)
+* [`Alfbot`](https://github.com/alfiansx/alfbot)
+* [`ArugaZ`](https://github.com/ArugaZ/whatsapp-bot)
+* [`AR15BOT`](https://github.com/A187ID/AR15BOT)
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
 
