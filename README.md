@@ -28,14 +28,16 @@ SCRIPT INI JANGAN DI JUAL/BELI KAN....KARNA 100% GRATIS BUAT KALIAN PARA PENGGUN
 
 ### ALAT, BAHAN MENJALANKAN SCRIPT
 siapin alat dan bahan.
+
 ```bash
 > 2 HandPhone (1 buat jalanin sc, 1 lagi buat scan kode qr)
-> Jaringan Internet yang wuzzz
-> Penyimpanan/ROM yang memadai
+> Jaringan Internet yang wuzzz 
+> Penyimpanan/ROM yang memadai 
 > Aplikasi Whatsapp
 ```
 
 ## Clone this project
+
 ```bash
 > Klo lu belom punya apk termux, download dulu di PlayStore
 > dah download? Langsung buka... ketik command di bawah
