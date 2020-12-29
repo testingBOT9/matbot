@@ -2,8 +2,8 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/testingBOT9/matbot/main/temp/Ram.jpg" width="230" height="230"/>
 </p>
-<p align=:center">
-𝙅𝙖𝙫𝙯𝙡𝙮𝙣𝘽𝙤𝙩
+<p align="center">
+<a href="#"><img title="testingBOT9" src="https://img.shields.io/badge/𝙅𝙖𝙫𝙯𝙡𝙮𝙣𝘽𝙤𝙩-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/testingBOT9/matbot/followers"><img title="Followers" src="https://img.shields.io/github/followers/testingBOT9?color=blue&style=flat-square"></a>
