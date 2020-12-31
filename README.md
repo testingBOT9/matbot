@@ -32,7 +32,7 @@ siapin alat dan bahan.
 >2 HandPhone (1 buat jalanin sc, 1 lagi buat scan kode qr)
 >Jaringan Internet yang wuzzz 
 >Penyimpanan/ROM yang memadai 
->Aplikasi Whatsapp
+>Aplikasi, nomor Whatsapp yang kosong.
 ```
 
 ## Clone this project
