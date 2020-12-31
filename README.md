@@ -97,13 +97,12 @@ Ket: Aktif 24 Jam >_
 * [`Donasi JavzlynBOT`](https://saweria.co/Javzlyn)
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
-
-* [`Youtube Admin`]()
+* [`Youtube Admin`](https://youtube.com/channel/UCVsWylgplnE294DRojNuXSw)
 * [`Instagram Admin`](https://instagram.com/febri_swag12)
 * [`WhatsApp Admin `](https://wa.me/+6281223461910)
-* [`Group WhatsApp `]()
-## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
+* [`Group WhatsApp `](https://chat.whatsapp.com/Ga1kIzOXYclCkobFuIg7sJ)
 
+## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 * [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)
 * [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)
 * [`Alfbot`](https://github.com/alfiansx/alfbot)
