@@ -28,7 +28,6 @@ SCRIPT INI JANGAN DI JUAL/BELI KAN....KARNA 100% GRATIS BUAT KALIAN PARA PENGGUN
 
 ### ALAT, BAHAN MENJALANKAN SCRIPT
 siapin alat dan bahan.
-
 ```bash
 > 2 HandPhone (1 buat jalanin sc, 1 lagi buat scan kode qr)
 > Jaringan Internet yang wuzzz 
@@ -37,7 +36,6 @@ siapin alat dan bahan.
 ```
 
 ## Clone this project
-
 ```bash
 > git clone https://github.com/A187ID/AR15BOT
 ```
@@ -51,7 +49,6 @@ you've just cloned!!
 ```
 
 ## Usage
-
 ```bash
 > npm start
 ```
@@ -59,7 +56,7 @@ you've just cloned!!
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
 
-## Features
+# Features
 
 | Sticker Creator |                Feature           |
 | :-----------: | :--------------------------------: |
