@@ -55,37 +55,36 @@ you've just cloned!!
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
 
-| Sticker Creator |                Feature           |
-| :-----------: | :--------------------------------: |
-|       ✅       | Send Photo with Caption          |
-|       ✅       | Reply A Photo                    |
-|       ✅       | Reply A Video or GIF             |
-|       ✅       | Send Video or GIF with Caption   |
-|       ✅       | Reply A Sticker ( sticker to image ) |
+| Sticker Creator |                Feature       |
+| :-----------: | :-----------------------------: |
+|       ✅      | Send Photo with Caption          |
+|       ✅      | Reply A Photo                    |
+|       ✅      | Reply A Video or GIF             |
+|       ✅      | Send Video or GIF with Caption   |
+|       ✅      | Reply A Sticker(sticker to image) |
 
-| Other  |                     Feature                     |
-| :------------: | :---------------------------------------------: |
-|       ✅        |   Get a random meme             |
-|       ✅        |   Text to speech                |
-|       ✅        |   Writing feature 				|
-|       ✅        |   What Anime Is This 			|
-|       ✅        |   Url2Img ( Screeenshot Web )   |
-|       ✅        |   Simsimi		                |
+| Other        |                     Feature      |
+| :------------: | :------------------------------: |
+|       ✅       |   Get a random meme             |
+|       ✅       |   Text to speech                |
+|       ✅       |   Writing feature               |
+|       ✅       |   WAIT                          |
+|       ✅       |   Url2Img ( Screeenshot Web )   |
+|       ✅       |   Simsimi		            |
 
-| Group  |                     Feature               |
-| :-----------: | :--------------------------------: |
-|       ✅        |   Tagall/Mentionall member       |
-|       ✅        |   Kick Member Group	             |
-|       ✅        |   Add Member Group	             |
-|       ✅        |   Get List Admins Group          |
+| Group       |                     Feature        |
+| :-----------: | :------------------------------: |
+|       ✅      |   Tagall/Mentionall member       |
+|       ✅      |   Kick Member Group	           |
+|       ✅      |   Add Member Group	           |
+|       ✅      |   Get List Admins Group          |
 
-| Owner Bot  |                     Feature           |
-| :-----------: | :--------------------------------: |
-|       ✅        |   Set Prefix                     |
-|       ✅        |   Broadcast                      |
-|       ✅        |   Clear All Chats                |
-
-Ket: Aktif 24 Jam >_
+| Owner Bot   |                     Feature      |
+| :-----------: | :------------------------------: |
+|       ✅      |   Set Prefix                     |
+|       ✅      |   Broadcast                      |
+|       ✅      |   Clear All Chats                |
+Ket: Aktif 24 Jam >_<
 
 ## DONASI <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="29px">
 * [`Donasi JavzlynBOT`](https://saweria.co/Javzlyn)
@@ -103,4 +102,5 @@ Ket: Aktif 24 Jam >_
 * [`ArugaZ`](https://github.com/ArugaZ/whatsapp-bot)
 * [`AR15BOT`](https://github.com/A187ID/AR15BOT)
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
+</details>
 
