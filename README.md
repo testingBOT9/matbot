@@ -29,34 +29,32 @@ SCRIPT INI JANGAN DI JUAL/BELI KAN....KARNA 100% GRATIS BUAT KALIAN PARA PENGGUN
 ### ALAT, BAHAN MENJALANKAN SCRIPT
 siapin alat dan bahan.
 ```bash
-> 2 HandPhone (1 buat jalanin sc, 1 lagi buat scan kode qr)
-> Jaringan Internet yang wuzzz 
-> Penyimpanan/ROM yang memadai 
-> Aplikasi Whatsapp
+>2 HandPhone (1 buat jalanin sc, 1 lagi buat scan kode qr)
+>Jaringan Internet yang wuzzz 
+>Penyimpanan/ROM yang memadai 
+>Aplikasi Whatsapp
 ```
 
 ## Clone this project
 ```bash
-> git clone https://github.com/A187ID/AR15BOT
+>git clone https://github.com/testingBOT9/matbot
 ```
 
 ## Install the dependencies:
 Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 ```bash
-> cd AR15BOT
-> bash install.sh
+>cd matbot
+>bash install.sh
 ```
 
 ## Usage
 ```bash
-> npm start
+>npm start
 ```
 
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
-
-# Features
 
 | Sticker Creator |                Feature           |
 | :-----------: | :--------------------------------: |
