@@ -428,6 +428,15 @@ async function starts() {
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
+                                case 'images':
+                                        if (args.length == 0) return aruga.reply(from, `Untuk mencari gambar dari pinterest\nketik: ${prefix}images [search]\ncontoh: ${prefix}images naruto`, id)
+                                        const cariwall = body.slice(8)
+                                        const hasilwall = await images.fdci(cariwall)
+                                        await aruga.sendFileFromUrl(from, hasilwall, '', '', id)
+                                        .catch(() => {
+                                            aruga.reply(from, 'Ada yang Error!', id)
+                                        })
+                                        break
 				case 'tstiker':
 				case 'tsticker':
 					if (args.length < 1) return reply('Textnya mana um?')
