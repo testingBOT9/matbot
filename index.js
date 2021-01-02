@@ -358,6 +358,22 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					})
 					break
+                                case 'nekopoi':
+                                   rugapoi.getLatest()
+                                  .then((result) => {
+                                      rugapoi.getVideo(result.link)
+                                      .then((res) => {
+                                          let heheq = '\n'
+                                          for (let i = 0; i < res.links.length; i++) {
+                                              heheq += `${res.links[i]}\n`
+                                          }
+                                          aruga.reply(from, `Title: ${res.title}\n\nLink:\n${heheq}\nmasih tester bntr :v`)
+                                      })
+                                  })
+                                  .catch(() => {
+                                      aruga.reply(from, 'Ada yang Error!', id)
+                                  })
+                                  break
 				case 'hilih':
 					if (args.length < 1) return reply('Teksnya mana um?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
