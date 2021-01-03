@@ -63,7 +63,7 @@ usage : send a picture with caption *$prefix}images*
 desc : this command can be used anytime, anywhere:v
 command : *${prefix}kickall
 desc : this command can be used if you are a group owner\n
-usage : just send the command
+usage : just send the command*
 }
 
 exports.help = help
