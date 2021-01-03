@@ -45,6 +45,9 @@ command : *${prefix}setprefix*
 desc : replace prefix
 usage : *${prefix}setprefix [text|optional]*\nexample : *${prefix}setprefix ?*
 note : This command can only be used by the bot owner\n
+command : *${prefix}images*
+usage : send a picture with caption *$prefix}images*
+desc : this command can be used anytime, anywhere:v
 > *Group Comands* <
 command : *${prefix}linkgroup*
 desc : take the group link
@@ -58,12 +61,10 @@ command : *${prefix}simih*
 desc : activate simi mode in the group
 usage : *${prefix}simih 1* to activate simi mode and *${prefix}simih 0* to deactivate simi mode
 note : This command can be used if you are a group admin\n`
-command : *${prefix}images*
-usage : send a picture with caption *$prefix}images*
-desc : this command can be used anytime, anywhere:v
-command : *${prefix}kickall
-desc : this command can be used if you are a group owner\n
-usage : just send the command*
+command : *${prefix}kickall*
+desc : kick all member
+usage : just send the command
+note : this command can be used if you are a group admin\n
 }
 
 exports.help = help
