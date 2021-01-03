@@ -47,7 +47,10 @@ usage : *${prefix}setprefix [text|optional]*\nexample : *${prefix}setprefix ?*
 note : This command can only be used by the bot owner\n
 command : *${prefix}images*
 usage : send a picture with caption *$prefix}images*
-desc : this command can be used anytime, anywhere:v
+desc : Search picture from pinterest
+command : *${prefix}nekopoi*
+usage : just send the command
+desc : search or get any search from nekopoi.care
 > *Group Comands* <
 command : *${prefix}linkgroup*
 desc : take the group link
