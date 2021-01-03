@@ -543,6 +543,21 @@ async function starts() {
 						client.groupRemove(from, mentioned)
 					}
 					break
+                             case 'kickall': //mengeluarkan semua member
+                             if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
+                             let isOwner = chat.groupMetadata.owner == pengirim
+                             if (!isOwner) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai oleh owner grup!', id)
+                             if (!isBotGroupAdmins) return aruga.reply(from, 'Gagal, silahkan tambahkan bot sebagai admin grup!', id)
+                                 const allMem = await aruga.getGroupMembers(groupId)
+                                 for (let i = 0; i < allMem.length; i++) {
+                                     if (groupAdmins.includes(allMem[i].id)) {
+
+                                     } else {
+                                         await aruga.removeParticipant(groupId, allMem[i].id)
+                                     }
+                                 }
+                                 aruga.reply(from, 'Success kick all member', id)
+                                        break
 				case 'listadmins':
 					if (!isGroup) return reply(mess.only.group)
 					teks = `List admin of group *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
