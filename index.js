@@ -14,9 +14,6 @@ const { help } = require('./src/help')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
-const {
-    rugapoi
-} = require('./lib')
 const fs = require('fs')
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -361,22 +358,6 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					})
 					break
-                                case 'nekopoi':
-                                   rugapoi.getLatest()
-                                  .then((result) => {
-                                      rugapoi.getVideo(result.link)
-                                      .then((res) => {
-                                          let heheq = '\n'
-                                          for (let i = 0; i < res.links.length; i++) {
-                                              heheq += `${res.links[i]}\n`
-                                          }
-                                          aruga.reply(from, `Title: ${res.title}\n\nLink:\n${heheq}\nmasih tester bntr :v`)
-                                      })
-                                  })
-                                  .catch(() => {
-                                      aruga.reply(from, 'Ada yang Error!', id)
-                                  })
-                                  break
 				case 'hilih':
 					if (args.length < 1) return reply('Teksnya mana um?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
@@ -447,15 +428,6 @@ async function starts() {
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-                                case 'images':
-                                        if (args.length == 0) return aruga.reply(from, `Untuk mencari gambar dari pinterest\nketik: ${prefix}images [search]\ncontoh: ${prefix}images naruto`, id)
-                                        const cariwall = body.slice(8)
-                                        const hasilwall = await images.fdci(cariwall)
-                                        await aruga.sendFileFromUrl(from, hasilwall, '', '', id)
-                                        .catch(() => {
-                                            aruga.reply(from, 'Ada yang Error!', id)
-                                        })
-                                        break
 				case 'tstiker':
 				case 'tsticker':
 					if (args.length < 1) return reply('Textnya mana um?')
