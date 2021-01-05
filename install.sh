@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+
 pkg update
 pkg upgrade
 apt-get install nodejs
