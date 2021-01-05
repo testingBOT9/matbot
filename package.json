@@ -1,43 +1,50 @@
 {
-  "name": "AR15BOT",
-  "version": "1.0.0",
-  "description": "Termux only",
+  "name": "termux-wabot",
+  "version": "0.0.2",
+  "description": "No comment",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-    "@adiwajshing/baileys": "^3.2.1",
-    "brainly-scraper": "^1.0.2",
-    "cheerio": "^1.0.0-rc.3",
-    "cloudconvert": "^2.1.5",
-    "got": "^11.8.0",
-    "gulp": "^4.0.2",
-    "gulp-webp": "^4.0.1",
-    "image-to-base64": "^2.1.1",
-    "moment": "^2.29.1",
-    "node-gtts": "^2.0.2",
-    "request": "^2.88.2",
-    "text-to-mp3": "^1.0.4",
-    "urlencode": "^1.1.0",
-    "webp-simple-converter": "^0.0.6",
-    "ytdl-core": "^3.4.2"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "node index"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aris187id/AR15BOT.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
-    "k"
+    "termux",
+    "whatsapp",
+    "bot",
+    "whatsapp",
+    "bot"
   ],
-  "author": "Abdul Muttaqin",
+  "author": "MhankBarBar",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aris187id/AR15BOT/issues"
+  "dependencies": {
+    "@adiwajshing/baileys": "github:adiwajshing/baileys",
+    "@kagchi/kag-api": "^1.5.5",
+    "async": "^2.4.1",
+    "axios": "^0.21.0",
+    "cfonts": "^2.9.0",
+    "escape-string-regexp": "^1.0.5",
+    "fake-useragent": "^1.0.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "imgbb-uploader": "^1.1.0",
+    "lolis.life": "^4.0.0",
+    "moment-timezone": "^0.5.32",
+    "multistream": "^2.1.0",
+    "node-fetch": "^2.6.1",
+    "remove.bg": "^1.3.0",
+    "request": "^2.81.0",
+    "spinnies": "^0.5.1",
+    "tiktok-scraper": "^1.4.7"
   },
-  "homepage": "https://github.com/aris187id/AR15BOT#readme"
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhankbarbar/termux-wabot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhankbarbar/termux-wabot/issues"
+  },
+  "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
 }
