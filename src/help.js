@@ -64,10 +64,6 @@ command : *${prefix}simih*
 desc : activate simi mode in the group
 usage : *${prefix}simih 1* to activate simi mode and *${prefix}simih 0* to deactivate simi mode
 note : This command can be used if you are a group admin\n`
-command : *${prefix}kickall*
-desc : kick all member
-usage : just send the command
-note : this command can be used if you are a group admin\n
 }
 
 exports.help = help
