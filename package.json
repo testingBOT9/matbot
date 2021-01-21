@@ -1,7 +1,7 @@
 {
-  "name": "termux-wabot",
+  "name": "whatsapp-bot-nodejs",
   "version": "0.0.2",
-  "description": "No comment",
+  "description": "Whatsapp-bot node.js by TestingBOT9",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -12,13 +12,15 @@
   },
   "keywords": [
     "termux",
+    "node.js
     "whatsapp",
     "bot",
+    "node.js",
     "whatsapp",
     "bot"
   ],
-  "author": "MhankBarBar",
-  "license": "ISC",
+  "author": "TestingBOT9",
+  "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "@kagchi/kag-api": "^1.5.5",
@@ -41,10 +43,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhankbarbar/termux-wabot.git"
+    "url": "git+https://github.com/testingBOT9/matbot.git"
   },
   "bugs": {
-    "url": "https://github.com/mhankbarbar/termux-wabot/issues"
+    "url": "https://github.com/testingBOT9/matbot/issues"
   },
   "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
 }
