@@ -1,14 +1,14 @@
 {
   "name": "whatsapp-bot-nodejs",
   "version": "0.0.2",
-  "description": "Whatsapp-bot node.js by TestingBOT9",
+  "description": "whatsapp-bot node.js by TestingBOT9",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
   },
   "keywords": [
     "termux",
