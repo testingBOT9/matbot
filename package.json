@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "link-ocr": "wget -O ~/../usr/share/tessdata/ind.traineddata \"https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
