@@ -2,9 +2,9 @@
   "name": "whatsapp-bot-nodejs",
   "version": "0.0.2",
   "description": "whatsapp-bot node.js by TestingBOT9",
-  "main": "index.js",
+  "main": "./index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "./lib"
   },
   "scripts": {
     "start": "node index.js",
