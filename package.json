@@ -1,24 +1,24 @@
 {
-  "name": "whatsapp-bot-nodejs",
+  "name": "matbot",
   "version": "0.0.2",
-  "description": "whatsapp-bot node.js by TestingBOT9",
-  "main": "./index.js",
+  "description": "WA-bot by testingBOT9",
+  "main": "index.js",
   "directories": {
-    "lib": "./lib"
+    "lib": "lib"
   },
   "scripts": {
-    "start": "node index.js",
-    "link-ocr": "wget -O ~/../usr/share/tessdata/ind.traineddata \"https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
     "termux",
-    "node.js",
+    "whatsapp",
+    "bot",
     "whatsapp",
     "bot"
   ],
-  "author": "TestingBOT9",
-  "license": "MIT",
+  "author": "MhankBarBar",
+  "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "@kagchi/kag-api": "^1.5.5",
@@ -41,10 +41,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/testingBOT9/matbot.git"
+    "url": "git+https://github.com/mhankbarbar/termux-wabot.git"
   },
   "bugs": {
-    "url": "https://github.com/testingBOT9/matbot/issues"
+    "url": "https://github.com/mhankbarbar/termux-wabot/issues"
   },
   "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
 }
