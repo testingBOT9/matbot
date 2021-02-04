@@ -609,6 +609,33 @@ async function starts() {
 						reply('Foto aja mas')
 					}
 					break
+                                if (text.includes("!hentai")){
+                                  var items = ["nsfwneko","anime hentai"];
+                                  var anim = items[Math.floor(Math.random() * items.length)];
+                                  var url = "https://api.computerfreaker.cf/v1/";
+    
+                                  axios.get(url)
+                                   .then((result) => {
+                                    var b = JSON.parse(JSON.stringify(result.data));
+                                    var anim =  b[Math.floor(Math.random() * b.length)];
+                                    imageToBase64(anim) // Path to the image
+                                    .then(
+                                      (response) => {
+	                          var buf = Buffer.from(response, 'base64');
+                                       conn.sendMessage(
+                                      id,
+                                       buf,MessageType.image)
+       
+                                      }
+                                   )
+                                   .catch(
+                                     (error) => {
+                                       console.log(error);
+                                     }
+                                    )
+    
+                                });
+                                }
 				default:
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
