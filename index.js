@@ -618,39 +618,6 @@ async function starts() {
 					} else {
 						console.log(color('[ERROR]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
 					}
-                                        break
-                                        if (text.includes("!hentai"))
-                                          {
-                                           if (isGroup) return reply(mess.only.group)
-                                           if (!isNsfw) return reply('❌F A L S E❌')
-                                           var items = ["nsfwneko","anime hentai"];
-                                           var anim = items[Math.floor(Math.random() * items.length)];
-                                           var url = "https://api.computerfreaker.cf/v1/";
-    
-                                           axios.get(url)
-                                            .then((result) => {
-                                            var b = JSON.parse(JSON.stringify(result.data));
-                                            var anim =  b[Math.floor(Math.random() * b.length)];
-                                            imageToBase64(anim) // Path to the image
-                                            .then(
-                                              (response) => {
-	                                  var buf = Buffer.from(response, 'base64'); // Ta-da	
-                                               conn.sendMessage(
-                                              id,
-                                               buf,MessageType.image)
-       
-                                              }
-                                               )
-                                               .catch(
-                                                 (error) => {
-                                                   console.log(error); // Logs an error if there was one
-                                                 }
-                                               )
-    
-                                             });
-                                             }
-                                             break
-
                            }
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
