@@ -610,6 +610,8 @@ async function starts() {
 					}
 					break
                                 if (text.includes("!hentai")){
+                                  if (!isGroup) return reply(mess.only.group)
+                                  if (!isNsfw) return reply('Command *!nsfw* belum di aktifkan di group ini')
                                   var items = ["nsfwneko","anime hentai"];
                                   var anim = items[Math.floor(Math.random() * items.length)];
                                   var url = "https://api.computerfreaker.cf/v1/";
