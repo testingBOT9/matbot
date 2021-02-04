@@ -27,6 +27,28 @@ const axios = require('axios')
 prefix = '.'
 blocked = []
 
+//chat
+if (text == ('!ping)){
+      if (!isOwner) return reply(mess.only.ownerB)
+      if (!isOwner) return reply(mess.error.idih)
+client.sendMess('!pong');
+}
+else if (text == ('Halo')){
+client.sendMess('Hallo bot aktif kak! Ketik *${prefix}help* untuk melihat menu');
+}
+else if (text == ('Hai')){
+client.sendMess('Hallo bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu');
+}
+else if (text == ('Bro')){
+client.sendMess('Ya kak! Bot aktif kok! Ketik ${prefix}help* untuk melihat menu');
+}
+else if (text == ('Assalamualaikum')){
+client.sendMess('Waalaikumsalam halo kak! Ketik *${prefix}help* untuk melihat menu');
+}
+else if (text == ('Permisi')
+client.sendMess('Ya bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu')
+}
+
 function kyun(seconds){
   function pad(s){
     return (s < 10 ? '0' : '') + s;
@@ -122,6 +144,7 @@ async function starts() {
 					stick: '❌ Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker ❌',
 					Iv: '❌ Link tidak valid ❌',
                                         Babu: '❌Wahai para admin jadikan bot ini sebagai admin:)❌'
+                                        idih: '❌Kamu siapa?❌'
 				},
 				only: {
 					group: '❌ Perintah ini hanya bisa di gunakan dalam group! ❌',
