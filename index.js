@@ -31,7 +31,7 @@ blocked = []
 if (text == '!ping){
       if (!isOwner) return reply(mess.only.ownerB)
       if (!isOwner) return reply(mess.error.idih)
-client.sendMessage('!pong', MessageType.text)
+client.sendMessage('!pong' MessageType.text)
 }
 else if (text == 'Halo'){
 client.sendMessage('Halo bot aktif kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
