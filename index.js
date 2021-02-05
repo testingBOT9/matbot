@@ -248,10 +248,10 @@ async function starts() {
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
 				if 'help':
-				if 'menu':
+				else if 'menu':
 					client.sendMessage(from, help(prefix), text)
 					break
-				if '!info':
+				if 'info':
 					me = client.user
 					uptime = process.uptime()
 					teks = `*Nama bot* : ${me.name}\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
