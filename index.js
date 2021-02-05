@@ -24,7 +24,6 @@ const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const axios = require('axios')
-const prefix = ('global.prefix')
 prefix = '.'
 blocked = []
 
