@@ -34,73 +34,73 @@ if (text == '!ping){
 client.sendMess('!pong')
 }
 else if (text == 'Halo'){
-client.sendMess('Halo bot aktif kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Halo bot aktif kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Hallo'){
-client.sendMess('Halo bot aktif kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Halo bot aktif kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Hai'){
-client.sendMess('Halo bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Halo bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Hay'){
-client.sendMess('Ya bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Bro'){
-client.sendMess('Ya kak! Bot aktif kok! Ketik ${prefix}help* untuk melihat menu')
+client.sendMess('Ya kak! Bot aktif kok! Ketik ${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Bre'){
-client.sendMess('Ya kak! Bot aktif kok! Ketik ${prefix}help* untuk melihat menu')
+client.sendMess('Ya kak! Bot aktif kok! Ketik ${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Feb'){
-client.sendMess('Ya! Bot aktif kok! Ketik ${prefix}help* untuk melihat menu gw nya off:) lagi gak megang hp')
+client.sendMess('Ya! Bot aktif kok! Ketik ${prefix}help* untuk melihat menu gw nya off:) lagi gak megang hp', MessageType.text)
 }
 else if (text == 'Assalamualaikum'){
-client.sendMess('Waalaikumsalam halo kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Waalaikumsalam halo kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'assalamualaikum'){
-client.sendMess('Waalaikumsalam halo kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Waalaikumsalam halo kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'asalamualaikum'){
-client.sendMess('Waalaikumsalam halo kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Waalaikumsalam halo kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Permisi'){
-client.sendMess('Ya bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'P'){
-client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'p'){
-client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Bot'){
-client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Cok'){
-client.sendMess('Ya adaapa? Ngomong sama bot dulu. Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya adaapa? Ngomong sama bot dulu. Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Jul'){
-client.sendMess('Ya bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot aktif kok kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'Test'){
-client.sendMess('Ya kak adaapa? Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya kak adaapa? Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'TEST'){
-client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot disini kak! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'bang'){
-client.sendMess('Ya bot disini dek! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya bot disini dek! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'July'){
-client.sendMess('Ya kak bot disini! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya kak bot disini! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'pe'){
-client.sendMess('Ya kak bot disini kok! Ketik *${prefix}help* untuk melihat menu')
+client.sendMess('Ya kak bot disini kok! Ketik *${prefix}help* untuk melihat menu', MessageType.text)
 }
 else if (text == 'mas'){
-client.sendMess('Ajg gak kayak gitu blok')
+client.sendMess('Ajg? gak kayak gitu goblok!', MessageType.text)
 }
 else if (text == 'Anjing'){
-client.sendMess('Jan toxic babi, asw, anjing, goblok')
+client.sendMess('Jan toxic babi, asw, anjing, goblok', MessageType.text)
 }
 
 function kyun(seconds){
