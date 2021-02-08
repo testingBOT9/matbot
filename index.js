@@ -248,18 +248,18 @@ async function starts() {
 			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
-				case 'help':
-				case 'menu':
+				case '!help':
+				case '!menu':
 					client.sendMessage(from, help(prefix), text)
 					break
-				if 'info':
+				if '!info':
 					me = client.user
 					uptime = process.uptime()
 					teks = `*Nama bot* : ${me.name}\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
-				if 'blocklist':
+				if '!blocklist':
 					teks = 'This is list of blocked number :\n'
 					for (let block of blocked) {
 						teks += `~> @${block.split('@')[0]}\n`
@@ -267,7 +267,7 @@ async function starts() {
 					teks += `Total : ${blocked.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
 					break
-				if 'ocr':
+				if '!ocr':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -285,8 +285,8 @@ async function starts() {
 						reply('Foto aja mas')
 					}
 					break
-				if 'stiker':
-				if 'sticker':
+				if '!stiker':
+				if '!sticker':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -383,7 +383,7 @@ async function starts() {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break
-				if 'gtts'
+				if '!gtts'
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
@@ -402,31 +402,31 @@ async function starts() {
 						})
 					})
 					break
-				if 'meme'
+				if '!meme'
 					meme = await kagApi.memes()
 					buffer = await getBuffer(`https://imgur.com/${meme.hash}.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
 					break
-				if 'memeindo':
+				if '!memeindo':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/${memein.hash}.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
 					break
-				if 'setprefix':
+				if '!setprefix':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
                                         if (!isOwner) return reply('Anda Siapa? bisa²nya memerintah saya!')
 					prefix = args[0]
 					reply(`Prefix berhasil di ubah menjadi : ${prefix}`)
 					break
-				if 'loli':
+				if '!loli':
 					loli.getSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERROR* ❌')
 						buffer = await getBuffer(res.url)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Citai Lolimu'})
 					})
 					break
-				if 'nsfwloli':
+				if '!nsfwloli':
 					if (!isNsfw) return reply('❌ *FALSE* ❌')
 					loli.getNSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERROR* ❌')
@@ -434,12 +434,12 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					})
 					break
-				if 'hilih':
+				if '!hilih':
 					if (args.length < 1) return reply('Teksnya mana um?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
 					reply(anu.result)
 					break
-				if 'yt2mp3':
+				if '!yt2mp3':
 					if (args.length < 1) return reply('Urlnya mana um?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/yta?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
@@ -450,7 +450,7 @@ async function starts() {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
 					break
-				if 'ytsearch':
+				if '!ytsearch':
 					if (args.length < 1) return reply('Yang mau di cari apaan? titit?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/ytsearch?q=${body.slice(10)}&apiKey=${apiKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
@@ -460,7 +460,7 @@ async function starts() {
 					}
 					reply(teks.trim())
 					break
-				if 'tiktok':
+				if '!tiktok':
 					if (args.length < 1) return reply('Urlnya mana um?')
 					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
 					reply(mess.wait)
@@ -469,7 +469,7 @@ async function starts() {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, video, {quoted: mek})
 					break
-				if 'tiktokstalk':
+				if '!tiktokstalk':
 					try {
 						if (args.length < 1) return client.sendMessage(from, 'Usernamenya mana um?', text, {quoted: mek})
 						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
@@ -482,8 +482,8 @@ async function starts() {
 						reply('Kemungkinan username tidak valid')
 					}
 					break
-				if 'nulis':
-				if 'tulis':
+				if '!nulis':
+				if '!tulis':
 					if (args.length < 1) return reply('Yang mau di tulis apaan?')
 					teks = body.slice(7)
 					reply(mess.wait)
@@ -492,7 +492,7 @@ async function starts() {
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek, caption: mess.success})
 					break
-				if 'url2img':
+				if '!url2img':
 					tipelist = ['desktop','tablet','mobile']
 					if (args.length < 1) return reply('Tipenya apa um?')
 					if (!tipelist.includes(args[0])) return reply('Tipe desktop|tablet|mobile')
@@ -504,8 +504,8 @@ async function starts() {
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				if 'tstiker':
-				if 'tsticker':
+				if '!tstiker':
+				if '!tsticker':
 					if (args.length < 1) return reply('Textnya mana um?')
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
@@ -520,7 +520,7 @@ async function starts() {
 						fs.unlinkSync(rano)
 					})
 					break
-				if 'tagall':
+				if '!tagall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
                                         if (!isGroupAdmins) return reply(mess.error.Babu)
@@ -533,7 +533,7 @@ async function starts() {
 					}
 					mentions(teks, members_id, true)
 					break
-				if 'clearall':
+				if '!clearall':
 					if (!isOwner) return reply('Kamu siapa?')
 					anu = await client.chats.all()
 					client.setMaxListeners(25)
@@ -542,7 +542,7 @@ async function starts() {
 					}
 					reply('Sukses delete all chat :)')
 					break
-				if 'bc':
+				if '!bc':
 					if (!isOwner) return reply('Kamu siapa?')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
@@ -560,7 +560,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					}
 					break
-				if 'add':
+				if '!add':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -575,7 +575,7 @@ async function starts() {
 						reply('Gagal menambahkan target, mungkin karena di private')
 					}
 					break
-				if 'kick':
+				if '!kick':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -594,7 +594,7 @@ async function starts() {
 						client.groupRemove(from, mentioned)
 					}
 					break
-				if 'listadmins':
+				if '!listadmins':
 					if (!isGroup) return reply(mess.only.group)
 					teks = `List admin of group *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
 					no = 0
@@ -604,7 +604,7 @@ async function starts() {
 					}
 					mentions(teks, groupAdmins, true)
 					break
-				if 'toimg':
+				if '!toimg':
 					if (!isQuotedSticker) return reply('❌ reply stickernya um ❌')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -618,14 +618,14 @@ async function starts() {
 						fs.unlinkSync(ran)
 					})
 					break
-				if 'simi':
+				if '!simi':
 					if (args.length < 1) return reply('Textnya mana um?')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
 					reply(anu)
 					break
-				if 'simih':
+				if '!simih':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -642,7 +642,7 @@ async function starts() {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
 					break
-				if 'welcome':
+				if '!welcome':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -658,7 +658,7 @@ async function starts() {
 					} else {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
-				if 'clone':
+				if '!clone':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Tag target yang ingin di clone')
@@ -674,7 +674,7 @@ async function starts() {
 						reply('Gagal om')
 					}
 					break
-				if 'wait':
+				if '!wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -688,7 +688,7 @@ async function starts() {
 						reply('Foto aja mas')
 					}
 					break
-                                if ('hentai'):
+                                if '!hentai':
                                            if (!isGroup) return reply(mess.only.group)
                                            if (!isNsfw) return reply('Command *!nsfw* belum di aktifkan di group ini')
                                      var items = ["nsfwneko","anime hentai"];
