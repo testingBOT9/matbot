@@ -30,7 +30,7 @@ prefix = '.'
 blocked = []
 
 //chat
-if (text == '!ping){
+if (text == '!ping'){
       if (!isOwner) return reply(mess.only.ownerB)
       if (!isOwner) return reply(mess.error.idih)
 client.sendMessage('!pong' ,MessageType.text);
