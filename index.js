@@ -30,7 +30,21 @@ prefix = '!'
 blocked = []
 
 //chat
-if (text == '!ping'){
+if(text.includes("!cek")){
+var num = text.replace(/!cek/ , "")
+var idn = num.replace("0","+62");
+
+console.log(id);
+const gg = idn+'@s.whatsapp.net'
+
+const exists = await conn.isOnWhatsApp (gg)
+console.log(exists);
+conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
+}
+if (text == '!menu){
+client.sendMessage(id, mess.menu ,MessageType.text)
+}
+else if (text == '!ping'){
       if (!isOwner) return reply(mess.only.ownerB)
       if (!isOwner) return reply(mess.error.idih)
 client.sendMessage('!pong' ,MessageType.text);
@@ -196,6 +210,7 @@ async function starts() {
 			mess = {
 				wait: '⌛ Sedang di Prosess ⌛',
 				success: '✔️ Berhasil ✔️',
+                                menu: 'Menampilkan Menu',
 				error: {
 					stick: '❌ Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker ❌',
 					Iv: '❌ Link tidak valid ❌',
