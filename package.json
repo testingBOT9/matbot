@@ -1,6 +1,6 @@
 {
   "name": "matbot",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "WA-bot by testingBOT9",
   "main": "index.js",
   "directories": {
@@ -12,13 +12,11 @@
   },
   "keywords": [
     "termux",
-    "whatsapp",
-    "bot",
-    "whatsapp",
-    "bot"
+    "whatsapp-api.js",
+    "node.js"
   ],
-  "author": "MhankBarBar",
-  "license": "ISC",
+  "author": "Julianto Febrian",
+  "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "@kagchi/kag-api": "^1.5.5",
@@ -46,5 +44,5 @@
   "bugs": {
     "url": "https://github.com/mhankbarbar/termux-wabot/issues"
   },
-  "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
+  "homepage": "https://github.com/termux-wabot#readme"
 }
