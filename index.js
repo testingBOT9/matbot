@@ -26,7 +26,7 @@ const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const axios = require('axios')
 const groupWAbot = ('https://chat.whatsapp.com/Ga1kIzOXYclCkobFuIg7sJ')
 const prefix = ('!')
-prefix = '!'
+prefix = '.'
 blocked = []
 
 //chat
